@@ -10,9 +10,9 @@
 * [Progressive Web App](https://de.wikipedia.org/wiki/Progressive_Web_App)
 
 
-Have any questions? Read our [FAQ](/docs/faq.md).
+Have any questions? Read our [FAQ](/documentation/faq.md).
 
-You can [host your own instance with docker](/docs/local-dev.md).
+You can [host your own instance with docker](/documentation/local-dev.md).
 
 
 ## Support the Snapdrop Community
