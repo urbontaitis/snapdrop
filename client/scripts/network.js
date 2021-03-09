@@ -55,8 +55,10 @@ class ServerConnection {
     }
 
     _endpoint() {                
+        const protocol = location.protocol.startsWith('https') ? 'wss' : 'ws';
         const webrtc = window.isRtcSupported ? '/webrtc' : '/fallback';    
-        return 'wss://h1.urbontaitis.lt' + webrtc;
+        const url = protocol + '://h1.urbontaitis.lt' + webrtc;
+        return url;
     }
 
     _disconnect() {
