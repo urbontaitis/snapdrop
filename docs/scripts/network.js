@@ -54,12 +54,9 @@ class ServerConnection {
         this._socket.send(JSON.stringify(message));
     }
 
-    _endpoint() {
-        // hack to detect if deployment or development environment
-        const protocol = location.protocol.startsWith('https') ? 'wss' : 'ws';
-        const webrtc = window.isRtcSupported ? '/webrtc' : '/fallback';
-        const url = protocol + '://' + location.host + '/server' + webrtc;
-        return url;
+    _endpoint() {                
+        const webrtc = window.isRtcSupported ? '/webrtc' : '/fallback';    
+        return 'wss://h1.urbontaitis.lt' + webrtc;
     }
 
     _disconnect() {
